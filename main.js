@@ -1,5 +1,6 @@
 import './style.css'
 
+const bodyElement = document.getElementById("body")
 const checkboxElement = document.getElementById("checkbox")
 
 const darkMode = () => {
@@ -10,9 +11,7 @@ const darkMode = () => {
 darkMode()
 
 const darkTogle = () => {
-    document.body.classList.toggle('is-dark-mode')
+    bodyElement.classList.toggle('is-dark-mode')
 }
 
 checkboxElement.addEventListener('change', darkTogle)
-
-

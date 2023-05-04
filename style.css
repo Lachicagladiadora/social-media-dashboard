@@ -12,11 +12,11 @@
   --youTube: hsl(2, 64%, 47%);
 
   --white: #f8f9fe;
-  --white-dark: #e8e8e8;
+  --white-dark: #f7e629;
   --black: #1d2029;
   --silver-light: #f0f3fa;
   --silver: #eff0f2;
-  --silver-dark:#a5a5a5;
+  --silver-dark:linear-gradient(to right, #7fbcd4 ,#b4f1ff);
   --gray: #828282;
   --dark-gray: #353535;
   /* --dark-lead: */
@@ -161,9 +161,9 @@ h1{
   margin-right: 5px;
 }
 
-.card-followers{
-  /* border: solid 1px red; */
-}
+/* .card-followers{
+  border: solid 1px red;
+} */
 
 .card-followers-number{
   /* border: solid  1px green; */
@@ -304,7 +304,7 @@ h2{
   }
   .header-grid{
     display: grid;
-    grid-template-columns: 1fr 200px; 
+    grid-template-columns: 1fr 100px; 
   }
 }
 
@@ -312,11 +312,11 @@ h2{
 /* DARK MODE */
 .is-dark-mode{
   --white: #212122;
-    --white-dark: #0a1d37;
+    --white-dark: #a8a8a8;
     --black: #e1e2e5;
     --silver-light: #28292b;
     --silver: #1c1d1f;
-    --silver-dark:linear-gradient(to right, #29618a ,#108659);;
+    --silver-dark:linear-gradient(to right ,#0a0b3d,  #4a8d76);
     --gray: #9b9b9b;
     --dark-gray: #626161;
 }
@@ -327,11 +327,11 @@ h2{
   }
   :root{
     --white: #212122;
-    --white-dark: #0a1d37;
+    --white-dark: #a8a8a8;
     --black: #e1e2e5;
     --silver-light: #28292b;
     --silver: #1c1d1f;
-    --silver-dark:linear-gradient(to right, #29618a ,#108659);;
+    --silver-dark:linear-gradient(to right, #7fc2aa ,#0a0b3d);;
     --gray: #9b9b9b;
     --dark-gray: #626161;
 
