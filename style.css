@@ -316,7 +316,7 @@ h2{
     --black: #e1e2e5;
     --silver-light: #28292b;
     --silver: #1c1d1f;
-    --silver-dark:linear-gradient(to right ,#0a0b3d,  #4a8d76);
+    --silver-dark:linear-gradient(to right ,#192f63,  #4a8d76);
     --gray: #9b9b9b;
     --dark-gray: #626161;
 }
