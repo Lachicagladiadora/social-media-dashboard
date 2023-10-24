@@ -1,11 +1,8 @@
-
-
 /* variables */
-:root{
+:root {
   --lime-green: hsl(163, 72%, 41%);
   --bright-red: hsl(356, 69%, 56%);
-  /* --facebook: hsl(203, 89%, 53%); */
-  --facebook: hsl( 221, 44%, 41%);
+  --facebook: hsl(221, 44%, 41%);
   --twitter: hsl(195, 100%, 50%);
   --instagram-1: hsl(37, 97%, 70%);
   --instagram-2: hsl(329, 70%, 58%);
@@ -16,49 +13,48 @@
   --black: #1d2029;
   --silver-light: #f0f3fa;
   --silver: #eff0f2;
-  --silver-dark:linear-gradient(to right, #7fbcd4 ,#b4f1ff);
+  --silver-dark: linear-gradient(to right, #7fbcd4, #b4f1ff);
   --gray: #828282;
   --dark-gray: #353535;
-  /* --dark-lead: */
 }
 
 /* general */
-body{
+body {
   margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
+  padding: 0px 20px;
+  font-family: "Inter", sans-serif;
   color: var(--black);
   background: var(--white);
-  /* border: solid 1px red; */
 }
 
-.wrapper{
-  padding: 0 20px;
+.wrapper {
+  width: 100%;
+  padding: 0%;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-row-gap: 25px;
 }
 
-.dark-mode{
+.dark-mode {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1em;
+  gap: 10px;
 }
 
-.checkbox{
+.checkbox {
   display: none;
 }
 
-.checkbox:checked ~ .switch::before{
+.checkbox:checked ~ .switch::before {
   transform: translate(0);
 }
 
-.switch{
+.switch {
   display: block;
-  /* border: solid 1px red; */
   width: 56px;
   height: 30px;
   border-radius: 20px;
@@ -69,59 +65,64 @@ body{
   user-select: none;
 }
 
-.switch::before{
+.switch::before {
   content: "";
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: var(--white-dark);
-  transform: translateX(26px);
-  transition: .2s;
+  transform: translateX(112%);
+  transition: 0.2s;
   will-change: transform;
 }
 
-
 /* header */
-.header{
-  /* border: solid 1px orangered;   */
+.header {
   background-color: var(--white);
   border-radius: 0 0 20px 20px;
   padding-bottom: 100px;
   padding-top: 2em;
 }
 
-h1{
+.header-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+h1 {
   font-size: 1.7em;
 }
 
-.total-followers{
+.total-followers {
   color: var(--gray);
-  margin: .5em 0;
+  margin: 0.5em 0;
   font-weight: 600;
   padding-bottom: 1.5em;
   border-bottom: solid 1px var(--gray);
 }
 
-/* top-card */
-.top-cards{
-  /* border: 1px solid purple; */
+.dark-mode-title {
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.top-cards {
   margin-top: -50px;
   margin-bottom: 3em;
 }
 
 /* card */
-.card{
+.card {
   border-radius: 7px;
   overflow: hidden;
   background: var(--silver-light);
   text-align: center;
   padding: 1.7em 0;
   position: relative;
-  /* border-top: 1px solid blue; */
 }
 
-.card::before{
+.card::before {
   content: "";
   height: 5px;
   display: block;
@@ -131,83 +132,71 @@ h1{
   top: 0;
 }
 
-.card.facebook::before{
+.card.facebook::before {
   background: var(--facebook);
 }
 
-.card.twitter::before{
+.card.twitter::before {
   background: var(--twitter);
 }
 
-.card.instagram::before{
-  background-image: linear-gradient(to right, var(--instagram-1) ,var(--instagram-2));
+.card.instagram::before {
+  background-image: linear-gradient(
+    to right,
+    var(--instagram-1),
+    var(--instagram-2)
+  );
 }
 
-.card.youtube::before{
+.card.youtube::before {
   background: var(--youTube);
 }
 
-.card-title{
-  /* border: solid 1px rgb(218, 182, 40); */
+.card-title {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--gray);
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: bold;
 }
 
-.card-title img{
+.card-title img {
   margin-right: 5px;
 }
 
-/* .card-followers{
-  border: solid 1px red;
-} */
-
-.card-followers-number{
-  /* border: solid  1px green; */
+.card-followers-number {
   font-size: 55px;
   font-weight: 600;
-
 }
 
-.card-followers-title{
-  /* border: solid 1px rgb(14, 6, 247); */
+.card-followers-title {
   display: block;
   text-transform: uppercase;
   color: var(--gray);
   letter-spacing: 6px;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
-.card-today{
-  /* border: solid 1px royalblue; */
+.card-today {
   margin-top: 30px;
   color: var(--lime-green);
   font-weight: bold;
-  font-size: .7em;
+  font-size: 0.7em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card-today img{
+.card-today img {
   margin-right: 5px;
 }
 
-/* overview */
-.overview{
-  /* border: solid 2px orangered; */
-  margin-bottom: 500px;
-}
-
-h2{
+h2 {
   color: var(--gray);
 }
 
-.card-small{
-  /* border: solid 2px green; */
+.card-small {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1.5em;
@@ -216,130 +205,132 @@ h2{
   padding: 1.5em;
 }
 
-.card-small p{
+.card-small p {
   margin: 0;
 }
 
-.card-small-views{
-  /* border: solid 2px yellowgreen; */
+.card-small-views {
   color: var(--gray);
   font-weight: bold;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
-.card-small-icon{
-  /* border: solid 2px purple; */
+.card-small-icon {
   text-align: right;
 }
 
-.card-small-number{
-  /* border: solid 2px rgb(0, 185, 179); */
+.card-small-number {
   font-weight: bold;
   font-size: 2.5em;
-  line-height: .8;
+  line-height: 0.8;
 }
 
-.card-small-percetage{
-  /* border: solid 2px rgb(53, 151, 112); */
+.card-small-percetage {
   text-align: right;
   display: flex;
   align-items: flex-end;
   color: var(--lime-green);
   justify-content: flex-end;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: bold;
-  
 }
 
-.card-small-percetage.is-danger{
+.card-small-percetage.is-danger {
   color: var(--bright-red);
 }
 
-.card-small-percetage span{
-  /* border: solid 2px olive; */
+.card-small-percetage span {
   display: flex;
   align-items: center;
 }
 
-.card-small-percetage img{
+.card-small-percetage img {
   margin-right: 5px;
 }
 
 /* RESPONSIVE */
 @media screen and (min-width: 481px) {
-  .grid{
-    /* border: solid 2px limegreen; */
-    grid-template-columns: 1fr 1fr ;
+  .grid {
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
   }
 
-  .wrapper{
-    max-width: 1440px;
+  .wrapper {
     margin: auto;
   }
 }
 
 @media screen and (min-width: 769px) {
-  .grid{
-    /* border: solid 2px limegreen; */
-    grid-template-columns: 1fr 1fr 1fr ;
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 25px;
   }
-  .wrapper{
-    max-width: 1440px;
+  .wrapper {
     margin: auto;
   }
-  
 }
 
-@media screen and (min-width: 1024px) { 
-  .grid{
-    /* border: solid 2px rgb(240, 92, 154); */
+@media screen and (min-width: 1024px) {
+  .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 25px;
   }
-  .wrapper{
-    max-width: 1440px;
+  .wrapper {
     margin: auto;
   }
-  .header-grid{
+  .header-grid {
     display: grid;
-    grid-template-columns: 1fr 100px; 
+    grid-template-columns: 1fr 150px;
+    gap: 10px;
+  }
+
+  .total-followers {
+    border: none;
   }
 }
 
+/* LIGHT MODE */
+.is-light-mode {
+  --white: #f8f9fe;
+  --white-dark: #f7e629;
+  --black: #1d2029;
+  --silver-light: #f0f3fa;
+  --silver: #eff0f2;
+  --silver-dark: linear-gradient(to right, #7fbcd4, #b4f1ff);
+  --gray: #828282;
+  --dark-gray: #353535;
+}
 
 /* DARK MODE */
-.is-dark-mode{
+.is-dark-mode {
   --white: #212122;
-    --white-dark: #a8a8a8;
-    --black: #e1e2e5;
-    --silver-light: #28292b;
-    --silver: #1c1d1f;
-    --silver-dark:linear-gradient(to right ,#192f63,  #4a8d76);
-    --gray: #9b9b9b;
-    --dark-gray: #626161;
+  --white-dark: #a8a8a8;
+  --black: #e1e2e5;
+  --silver-light: #28292b;
+  --silver: #1c1d1f;
+  --silver-dark: linear-gradient(to right, #192f63, #4a8d76);
+  --gray: #9b9b9b;
+  --dark-gray: #626161;
 }
 
-@media (prefers-color-scheme: dark){
-  body{
-    background: #353535;
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--white);
   }
-  :root{
+  :root {
     --white: #212122;
     --white-dark: #a8a8a8;
     --black: #e1e2e5;
     --silver-light: #28292b;
     --silver: #1c1d1f;
-    --silver-dark:linear-gradient(to right, #7fc2aa ,#0a0b3d);;
+    --silver-dark: linear-gradient(to right, #7fc2aa, #0a0b3d);
     --gray: #9b9b9b;
     --dark-gray: #626161;
-
   }
-  .switch{
-    background-color: linear-gradient(to right, #29618a ,#108659);
+  .switch {
+    background-color: linear-gradient(to right, #29618a, #108659);
   }
-  .switch::before{
-    background-color: #0a1d37;
+  .switch::before {
+    background-color: var(--white-dark);
   }
 }
