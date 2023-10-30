@@ -1,9 +1,8 @@
 # Social Media Dashboard
 
-Web project with HTML, CSS and dark mode and light mode with logic in JavaScript.
+Web project with HTML, CSS and some lines of JavaScript.
+Dark mode and light mode with logic in JavaScript.
 Layout and responsive design practice.
-
----
 
 ## Desktop
 
