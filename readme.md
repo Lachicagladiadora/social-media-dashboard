@@ -17,5 +17,5 @@ Layout and responsive design practice.
 
 ## Mobile
 
-![light](./img/light-mode-movil.png)
-![dark](./img/dark-mode-movil.png)
+![light](./img/light-mode-mobile.png)
+![dark](./img/dark-mode-mobile.png)
