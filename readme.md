@@ -1,8 +1,9 @@
 # Social Media Dashboard
 
-Web project with HTML, CSS and some lines of JavaScript.
-Dark mode and light mode with logic in JavaScript.
-Layout and responsive design practice.
+View ["Social Media Dashboard"](https://lachicagladiadora.github.io/dashboard-project-html-css/)
+
+Web project in Vite with HTML, CSS and some lines of JavaScript.
+Responsive layout and design practice that includes dark mode and light mode with JavaScript logic.
 
 ## Desktop
 
@@ -18,3 +19,13 @@ Layout and responsive design practice.
 
 ![light](./img/light-mode-mobile.png)
 ![dark](./img/dark-mode-mobile.png)
+
+## Installation
+
+1. Clone this repository.
+2. Run `npm install` to install the dependencies.
+3. Run `npm run dev` to run the server so you can enjoy the viewing.
+
+## Use
+
+Once installed, simply open the application and you can use the code as a reference, to practice or improve it.
