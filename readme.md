@@ -20,12 +20,8 @@ Responsive layout and design practice that includes dark mode and light mode wit
 ![light](./img/light-mode-mobile.png)
 ![dark](./img/dark-mode-mobile.png)
 
-## Installation
+# How to run
 
 1. Clone this repository.
 2. Run `npm install` to install the dependencies.
 3. Run `npm run dev` to run the server so you can enjoy the viewing.
-
-## Use
-
-Once installed, simply open the application and you can use the code as a reference, to practice or improve it.
