@@ -303,6 +303,11 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    max-width: 1700px;
+    margin: 0px auto;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 25px;
@@ -347,6 +352,7 @@ h2 {
   --silver-dark: linear-gradient(to right, #b4f1ff, #4dbde9);
   --gray: #9b9b9b;
   --dark-gray: #626161;
+
   & .dark-mode-title::before {
     content: "Light ";
   }
