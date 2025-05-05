@@ -1,5 +1,3 @@
-import "./style.css";
-
 const checkboxElement = document.getElementById("checkbox");
 
 const darkMode = () => {
